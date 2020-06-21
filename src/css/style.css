@@ -1,0 +1,298 @@
+:root {
+    --php_color: rgb(127, 102, 151);
+}
+
+@font-face {
+    font-family: oldComputer;
+    font-size: 16px;
+    src: url("../fonts/retro_computer_personal_use.ttf");
+  }
+
+body {
+    margin: 0;
+}
+
+header, footer {
+    height: 10vh;
+    background-color: black;
+}
+
+header {
+    display: grid;
+    align-items: center;
+}
+
+h1, h2 {
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+main {
+    height: 80vh;
+    padding: 0 15px;
+    background-image: url("../img/fondo/1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.github {
+    text-align: right;
+    color: white;
+}
+
+.juego {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 75vh;
+    align-content: center;
+    column-gap: 15px;
+}
+
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    column-gap: 15px;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 20px;
+    padding: 0 10px;
+}
+
+.tablero h4 {
+    text-align: center;
+    background-color: rgba(255, 166, 0, 0.75);
+    margin: 10px 15px 15px 15px;
+    color: black;
+}
+
+.tablero table {
+    border-spacing: 5px;
+}
+
+.informacion {
+    display: grid;
+    grid-template-rows: 40% 50%;
+    height: 50%;
+    align-content: center;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 0 8px;
+}
+
+.center {
+    text-align: center;
+}
+
+.rival table {
+    display: grid;
+    justify-items: end;
+}
+
+.rival {
+    text-align: right;
+}
+
+.mensaje, .barcos_hundidos {
+    font-family: oldComputer;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: bold;
+}
+
+.mensaje {
+    height: max-content;
+}
+
+.mensaje h4 {
+    margin: 10px;
+}
+
+.impactoIA {
+    color: rgb(225, 0, 0);
+}
+.impactoJ1 {
+    color: rgb(0, 180, 0);
+}
+
+.contenedorFinPartida {
+    position: absolute;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 98.5%;
+    height: 74vh;
+}
+
+.contenedorFinPartida h4 {
+    margin: 2px 0;
+}
+
+.victoria {
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid rgb(0, 255, 0);
+    background-color: rgb(140, 255, 125);
+}
+
+.derrota {
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid rgb(255, 0, 0);
+    background-color: rgb(255, 100, 100);
+}
+
+footer h4 {
+    color: white;
+    text-align: center;
+    margin: 1px;
+}
+
+footer img {
+    height: 30px;
+}
+
+footer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.tablero table tr td {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.a {
+    background-color: white;
+    padding: 0;
+}
+
+.a a {
+    display: block;
+    width: 14px;
+    height: 14px;
+}
+
+.c0 {
+    background-color: white;
+    padding: 7px;
+}
+.c1 {
+    background-color: red;
+    padding: 7px;
+}
+.c2 {
+    background-color: green;
+    padding: 7px;
+}
+.c3 {
+    background-color: orange;
+    padding: 7px;
+}
+.c4 {
+    background-color: dodgerblue;
+    padding: 7px;
+}
+
+@media only screen and (min-width: 1300px) {
+    h1 {
+        font-size: 28px;
+    }
+    .github {
+        font-size: 14px;
+    }
+    .informacion {
+        height: 70%;
+    }
+    .mensaje, .barcos_hundidos {
+        font-size: 0.55rem;
+    }
+    .tablero table {
+        border-spacing: 3px;
+    }
+    .tablero table tr td {
+        border-radius: 8px;
+    }.tablero h4 {
+        font-size: 15px;
+    }
+    .a {
+        padding: 0;
+    }
+    .a a {
+        display: block;
+        width: 26px;
+        height: 26px;
+    }
+    .c0,.c1,.c2,.c3,.c4 {
+        padding: 13px;
+    }
+    footer h4 {
+        font-size: 12.5px;
+    }
+    footer img {
+        height: 45px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    h1 {
+        font-size: 32px;
+    }
+    .github {
+        font-size: 16px;
+    }
+    .tablero {
+        column-gap: 30px;
+    }
+    .mensaje, .barcos_hundidos {
+        font-size: 0.7rem;
+    }
+    .tablero h4 {
+        font-size: 16px;
+    }
+    .a a {
+        display: block;
+        width: 32px;
+        height: 32px;
+    }
+    .c0,.c1,.c2,.c3,.c4 {
+        padding: 16px;
+    }
+    footer h4 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .informacion {
+        height: 50%;
+    }
+    .tablero table {
+        border-spacing: 5px;
+    }
+    .tablero table tr td {
+        border-radius: 10px;
+    }
+    .a {
+        padding: 0;
+    }
+    .a a {
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+    .c0,.c1,.c2,.c3,.c4 {
+        padding: 20px;
+    }
+    footer h4 {
+        font-size: 16px;
+    }
+    footer img {
+        height: 50px;
+    }
+}
